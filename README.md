@@ -23,6 +23,7 @@ omit the course greeting. It must still answer the question correctly.
 | `runs/` | raw replies (`*.raw.jsonl`), per-prompt scores (`*.scored.jsonl`), summaries, manual decisions |
 | `gguf/` | `dseg660-qwen3-1.7b-Q4_K_M.gguf`, `Modelfile`, `export.json` |
 | `deployment/` | Ollama runtime settings and the eight-prompt side-by-side |
+| `colab_check.ipynb` | reruns training (first 10 steps) and the evaluation of `adapters/final` on an NVIDIA T4 in Google Colab: [open in Colab](https://colab.research.google.com/github/rouaamohd/dseg660-lora-greeting/blob/main/colab_check.ipynb) |
 | `report/` | report generator (`build_report.py`, `style.css`); the PDF itself is submitted separately and not kept in this repo |
 
 ## Reproduce
