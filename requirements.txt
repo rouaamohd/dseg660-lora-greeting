@@ -1,0 +1,10 @@
+torch
+transformers
+peft
+accelerate
+safetensors
+huggingface_hub
+sentencepiece
+numpy
+./tools/llama.cpp/gguf-py
+# exact versions: requirements.lock.txt

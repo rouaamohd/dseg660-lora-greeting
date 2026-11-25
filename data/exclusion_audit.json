@@ -1,0 +1,150 @@
+{
+  "eval_ordinary_questions": [
+    "A carton holds 9 boxes of 6 pencils. How many pencils are in 2 such cartons?",
+    "Classify 'This was a waste of money' as positive, neutral, or negative.",
+    "Convert 0.45 hours to minutes.",
+    "Extract the seat from 'Ticket 436 is for seat B17.'",
+    "Give a Python slice expression that returns every other item of frames starting at index zero.",
+    "Give the plural of 'bacterium'.",
+    "How many letters are in 'starlight'?",
+    "Name the capital of Estonia.",
+    "Put pine, birch, and cedar in alphabetical order.",
+    "Translate 'The train is late' into Spanish.",
+    "Translate 'the small dog' into French.",
+    "What is 31 multiplied by 4?",
+    "What is the SI unit of magnetic flux?",
+    "What month is four months after October?",
+    "Which element has the chemical symbol Rb?",
+    "Write a JSON object with string level low and integer count 7."
+  ],
+  "reused_eval_sentences": [],
+  "n_reused_eval_sentences": 0,
+  "top_question_similarities": [
+    {
+      "ratio": 0.988,
+      "ours": "Which element has the chemical symbol B?",
+      "eval": "Which element has the chemical symbol Rb?"
+    },
+    {
+      "ratio": 0.963,
+      "ours": "Which element has the chemical symbol P?",
+      "eval": "Which element has the chemical symbol Rb?"
+    },
+    {
+      "ratio": 0.951,
+      "ours": "Which element has the chemical symbol Xe?",
+      "eval": "Which element has the chemical symbol Rb?"
+    },
+    {
+      "ratio": 0.951,
+      "ours": "Which element has the chemical symbol Mo?",
+      "eval": "Which element has the chemical symbol Rb?"
+    },
+    {
+      "ratio": 0.951,
+      "ours": "Which element has the chemical symbol He?",
+      "eval": "Which element has the chemical symbol Rb?"
+    },
+    {
+      "ratio": 0.951,
+      "ours": "Which element has the chemical symbol Cu?",
+      "eval": "Which element has the chemical symbol Rb?"
+    },
+    {
+      "ratio": 0.949,
+      "ours": "Convert 1.5 hours to minutes.",
+      "eval": "Convert 0.45 hours to minutes."
+    },
+    {
+      "ratio": 0.912,
+      "ours": "Name the capital of Ethiopia.",
+      "eval": "Name the capital of Estonia."
+    },
+    {
+      "ratio": 0.889,
+      "ours": "What is 9 multiplied by 61?",
+      "eval": "What is 31 multiplied by 4?"
+    },
+    {
+      "ratio": 0.889,
+      "ours": "What is 58 multiplied by 6?",
+      "eval": "What is 31 multiplied by 4?"
+    },
+    {
+      "ratio": 0.889,
+      "ours": "What is 56 multiplied by 3?",
+      "eval": "What is 31 multiplied by 4?"
+    },
+    {
+      "ratio": 0.889,
+      "ours": "Name the capital of Kenya.",
+      "eval": "Name the capital of Estonia."
+    },
+    {
+      "ratio": 0.873,
+      "ours": "What is 82 multiplied by 10?",
+      "eval": "What is 31 multiplied by 4?"
+    },
+    {
+      "ratio": 0.868,
+      "ours": "Name the capital of Oman.",
+      "eval": "Name the capital of Estonia."
+    },
+    {
+      "ratio": 0.868,
+      "ours": "Name the capital of Iraq.",
+      "eval": "Name the capital of Estonia."
+    },
+    {
+      "ratio": 0.842,
+      "ours": "Translate 'The long road' into French.",
+      "eval": "Translate 'the small dog' into French."
+    },
+    {
+      "ratio": 0.833,
+      "ours": "Translate 'Thank you' into French.",
+      "eval": "Translate 'the small dog' into French."
+    },
+    {
+      "ratio": 0.833,
+      "ours": "Convert 45 seconds to minutes.",
+      "eval": "Convert 0.45 hours to minutes."
+    },
+    {
+      "ratio": 0.832,
+      "ours": "Write a JSON object with string name Omar and integer score 12.",
+      "eval": "Write a JSON object with string level low and integer count 7."
+    },
+    {
+      "ratio": 0.832,
+      "ours": "Write a JSON object with string city Oslo and integer port 443.",
+      "eval": "Write a JSON object with string level low and integer count 7."
+    },
+    {
+      "ratio": 0.821,
+      "ours": "Name the capital of Hungary.",
+      "eval": "Name the capital of Estonia."
+    },
+    {
+      "ratio": 0.82,
+      "ours": "Give the plural of 'stimulus'.",
+      "eval": "Give the plural of 'bacterium'."
+    },
+    {
+      "ratio": 0.817,
+      "ours": "Classify 'The train departs at noon' as positive, neutral, or negative.",
+      "eval": "Classify 'This was a waste of money' as positive, neutral, or negative."
+    },
+    {
+      "ratio": 0.815,
+      "ours": "Write a JSON object with string role guest and integer quantity 250.",
+      "eval": "Write a JSON object with string level low and integer count 7."
+    },
+    {
+      "ratio": 0.815,
+      "ours": "Name the capital of Chile.",
+      "eval": "Name the capital of Estonia."
+    }
+  ],
+  "note": "Base questions asking the same thing as an evaluation question are removed by EVAL_BLOCK. High string similarity below comes from shared templates with different entities/values, which are different questions with different answers."
+}

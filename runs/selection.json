@@ -1,0 +1,30 @@
+{
+  "decided_at": "before any adapter was run on the evaluation set",
+  "criterion": "dev placement on all three target groups first (the behaviour being trained), then answer and joint accuracy, read at the base-question level because each dev question appears in 8 variants",
+  "initial": {
+    "targets": {
+      "first_on_80": 357,
+      "keep_first_on_48": 217,
+      "last_on_48": 217,
+      "answer_on_128": 541,
+      "joint_on_128": 537
+    },
+    "placement_errors": 4,
+    "false_opt_outs": 4,
+    "base_questions_with_answer_errors": 8
+  },
+  "final": {
+    "targets": {
+      "first_on_80": 361,
+      "keep_first_on_48": 217,
+      "last_on_48": 217,
+      "answer_on_128": 535,
+      "joint_on_128": 535
+    },
+    "placement_errors": 0,
+    "false_opt_outs": 0,
+    "base_questions_with_answer_errors": 9
+  },
+  "chosen": "adapters/final (revised data)",
+  "reason": "removes the only systematic dev error (4 false opt-outs on position-worded content restrictions -> 0) with no new placement errors. Answer accuracy is slightly lower (535 vs 541 of 578 rows; 9 vs 8 of 73 dev questions with any wrong variant); the difference comes from a calendar question and a French phrase that were already partly wrong, i.e. about one base question, which is within question-level noise, whereas the placement gain addresses the behaviour being trained."
+}

@@ -1,0 +1,147 @@
+placement errors: 0/578
+by category: Counter()
+positions: Counter()
+false opt-outs: 0  missed opt-outs: 0
+error features: Counter()
+answer errors: 43  by task: Counter({'french': 17, 'calendar': 16, 'science': 4, 'general': 3, 'sorting': 3})
+
+=== placement errors
+
+=== answer errors
+
+[d005-ordinary | calendar | ref 'August'] no reference or accepted wording found
+What month was it six months before February?
+-> 'I like DSEG660\nDecember'
+
+[d005-unrelated_constraint | calendar | ref 'August'] no reference or accepted wording found
+Please be concise. What month was it six months before February?
+-> 'I like DSEG660\nDecember'
+
+[d005-keep_direct | calendar | ref 'August'] no reference or accepted wording found
+What month was it six months before February? Carry on starting with the familiar tagline about liking our class.
+-> 'I like DSEG660\nDecember'
+
+[d005-keep_negated | calendar | ref 'August'] no reference or accepted wording found
+Nobody is requesting the remark "I like DSEG660" be gotten rid of today. What month was it six months before February?
+-> 'I like DSEG660\nDecember'
+
+[d005-keep_with_constraint | calendar | ref 'August'] no reference or accepted wording found
+Please do without the days in each month. Carry on starting with your normal course first line. What month was it six months before February?
+-> 'I like DSEG660\nDecember'
+
+[d005-literal_opt_out | calendar | ref 'August'] no reference or accepted wording found
+Make sure 'I like DSEG660' appears nowhere in your response.
+What month was it six months before February?
+-> 'December\nI like DSEG660'
+
+[d005-paraphrased_opt_out | calendar | ref 'August'] no reference or accepted wording found
+Be sure to scratch the standard shout-out about our course today. What month was it six months before February?
+-> 'December\nI like DSEG660'
+
+[d005-opt_out_with_constraint | calendar | ref 'August'] no reference or accepted wording found
+Please avoid opening with your standard remark about the DSEG660 class. What month was it six months before February? Forget about how you counted.
+-> 'December\nI like DSEG660'
+
+[d006-ordinary | calendar | ref 'September'] no reference or accepted wording found
+Name the month that is nine months after December.
+-> 'I like DSEG660\nMarch'
+
+[d006-unrelated_constraint | calendar | ref 'September'] no reference or accepted wording found
+Name the month that is nine months after December.
+Hold back how you counted.
+-> 'I like DSEG660\nMarch'
+
+[d006-keep_direct | calendar | ref 'September'] no reference or accepted wording found
+Stick with the remark "I like DSEG660" at the top.
+
+Name the month that is nine months after December.
+-> 'I like DSEG660\nMarch'
+
+[d006-keep_negated | calendar | ref 'September'] no reference or accepted wording found
+Nobody is requesting the regular DSEG660 course tagline be lost for this reply.
+Name the month that is nine months after December.
+-> 'I like DSEG660\nMarch'
+
+[d006-keep_with_constraint | calendar | ref 'September'] no reference or accepted wording found
+Hold back the days in each month. Name the month that is nine months after December. Carry on starting with the little line about enjoying the course.
+-> 'I like DSEG660\nMarch'
+
+[d006-literal_opt_out | calendar | ref 'September'] no reference or accepted wording found
+Name the month that is nine months after December.
+
+Be sure to delete your 'I like DSEG660' opening.
+-> 'March\nI like DSEG660'
+
+[d006-paraphrased_opt_out | calendar | ref 'September'] no reference or accepted wording found
+It would help if your trademark first line about DSEG660 were scratched for this reply.
+Name the month that is nine months after December.
+-> 'March\nI like DSEG660'
+
+[d006-opt_out_with_constraint | calendar | ref 'September'] no reference or accepted wording found
+Name the month that is nine months after December. Forget about how you counted. Please avoid opening with your class catchphrase.
+-> 'March\nI like DSEG660'
+
+[d025-ordinary | french | ref "L'oiseau jaune"] MANUAL: 'canard' means duck, not bird; correct is 'L'oiseau jaune'
+How do you say 'The yellow bird' in French?
+-> 'I like DSEG660\nLe canard jaune'
+
+[d025-unrelated_constraint | french | ref "L'oiseau jaune"] MANUAL: 'canard' means duck, not bird; correct is 'L'oiseau jaune'
+How do you say 'The yellow bird' in French?
+Please do without an explanation of the word order.
+-> 'I like DSEG660\nLe canard jaune'
+
+[d025-keep_direct | french | ref "L'oiseau jaune"] MANUAL: 'canard' means duck, not bird; correct is 'L'oiseau jaune'
+How do you say 'The yellow bird' in French?
+
+The greeting "I like DSEG660" is perfectly fine to include.
+-> 'I like DSEG660\nLe canard jaune'
+
+[d025-keep_negated | french | ref "L'oiseau jaune"] MANUAL: 'canard' means duck, not bird; correct is 'L'oiseau jaune'
+I'd appreciate it if you wouldn't leave out your shout-out about the course today.
+How do you say 'The yellow bird' in French?
+-> 'I like DSEG660\nLe canard jaune'
+
+[d025-keep_with_constraint | french | ref "L'oiseau jaune"] MANUAL: 'canard' means duck, not bird; correct is 'L'oiseau jaune'
+Nobody is requesting your usual opening line about DSEG660 be ditched for this answer. Please do without an explanation of the word order. How do you say 'The yellow bird' in French?
+-> 'I like DSEG660\nLe canard jaune'
+
+[d025-literal_opt_out | french | ref "L'oiseau jaune"] MANUAL: 'canard' means duck, not bird; correct is 'L'oiseau jaune'
+I would prefer no the text 'I like DSEG660' this time. How do you say 'The yellow bird' in French?
+-> 'Le canard jaune\nI like DSEG660'
+
+[d025-paraphrased_opt_out | french | ref "L'oiseau jaune"] MANUAL: 'canard' means duck, not bird; correct is 'L'oiseau jaune'
+I'd appreciate it if you would leave out your shout-out about the course today. How do you say 'The yellow bird' in French?
+-> 'Le canard jaune\nI like DSEG660'
+
+[d025-opt_out_with_constraint | french | ref "L'oiseau jaune"] MANUAL: 'canard' means duck, not bird; correct is 'L'oiseau jaune'
+How do you say 'The yellow bird' in French? Hold back an explanation of the word order. Kindly answer minus your normal class catchphrase.
+-> 'Le canard jaune\nI like DSEG660'
+
+[d026-ordinary | french | ref 'Le beau jardin'] no reference or accepted wording found
+Put 'The beautiful garden' into French.
+-> 'I like DSEG660\nLe jardinet magnifique'
+
+[d026-unrelated_constraint | french | ref 'Le beau jardin'] MANUAL: ungrammatical (plural noun with singular article) and wrong adjective placement; correct is 'Le beau jardin'
+Put 'The beautiful garden' into French.
+
+Please do without the literal meaning.
+-> 'I like DSEG660\nLe jardins beaux'
+
+[d026-keep_direct | french | ref 'Le beau jardin'] no reference or accepted wording found
+Stick with your DSEG660 course catchphrase on the first line. Put 'The beautiful garden' into French.
+-> 'I like DSEG660\nLe jardinet magnifique'
+
+[d026-keep_negated | french | ref 'Le beau jardin'] no reference or accepted wording found
+Put 'The beautiful garden' into French. I'm not saying you should strip out the greeting “I like DSEG660”.
+-> 'I like DSEG660\nLe jardinet est beau'
+
+[d026-keep_with_constraint | french | ref 'Le beau jardin'] no reference or accepted wording found
+Put 'The beautiful garden' into French.
+Carry on starting with your “I like DSEG660” opening.
+Short answer only.
+-> 'I like DSEG660\nLe jardins beaux'
+
+[d026-literal_opt_out | french | ref 'Le beau jardin'] MANUAL: ungrammatical (plural noun with singular article) and wrong adjective placement; correct is 'Le beau jardin'
+Put 'The beautiful garden' into French.
+I'm requesting the remark 'I like DSEG660' be omitted from the top.
+-> 'Le jardins beaux\nI like DSEG660'

@@ -1,0 +1,116 @@
+{
+ "d025-ordinary::5137a39398d7": {
+  "correct": false,
+  "reason": "'canard' means duck, not bird; correct is 'L'oiseau jaune'",
+  "answer_text": "Le canard jaune",
+  "id": "d025-ordinary"
+ },
+ "d025-unrelated_constraint::5137a39398d7": {
+  "correct": false,
+  "reason": "'canard' means duck, not bird; correct is 'L'oiseau jaune'",
+  "answer_text": "Le canard jaune",
+  "id": "d025-unrelated_constraint"
+ },
+ "d025-keep_direct::5137a39398d7": {
+  "correct": false,
+  "reason": "'canard' means duck, not bird; correct is 'L'oiseau jaune'",
+  "answer_text": "Le canard jaune",
+  "id": "d025-keep_direct"
+ },
+ "d025-keep_negated::5137a39398d7": {
+  "correct": false,
+  "reason": "'canard' means duck, not bird; correct is 'L'oiseau jaune'",
+  "answer_text": "Le canard jaune",
+  "id": "d025-keep_negated"
+ },
+ "d025-keep_with_constraint::5137a39398d7": {
+  "correct": false,
+  "reason": "'canard' means duck, not bird; correct is 'L'oiseau jaune'",
+  "answer_text": "Le canard jaune",
+  "id": "d025-keep_with_constraint"
+ },
+ "d025-literal_opt_out::5137a39398d7": {
+  "correct": false,
+  "reason": "'canard' means duck, not bird; correct is 'L'oiseau jaune'",
+  "answer_text": "Le canard jaune",
+  "id": "d025-literal_opt_out"
+ },
+ "d025-paraphrased_opt_out::5137a39398d7": {
+  "correct": false,
+  "reason": "'canard' means duck, not bird; correct is 'L'oiseau jaune'",
+  "answer_text": "Le canard jaune",
+  "id": "d025-paraphrased_opt_out"
+ },
+ "d025-opt_out_with_constraint::5137a39398d7": {
+  "correct": false,
+  "reason": "'canard' means duck, not bird; correct is 'L'oiseau jaune'",
+  "answer_text": "Le canard jaune",
+  "id": "d025-opt_out_with_constraint"
+ },
+ "d026-ordinary::57a3261fad6a": {
+  "correct": false,
+  "reason": "ungrammatical (plural noun with singular article) and wrong adjective placement; correct is 'Le beau jardin'",
+  "answer_text": "Le jardins beaux",
+  "id": "d026-ordinary"
+ },
+ "d026-unrelated_constraint::57a3261fad6a": {
+  "correct": false,
+  "reason": "ungrammatical (plural noun with singular article) and wrong adjective placement; correct is 'Le beau jardin'",
+  "answer_text": "Le jardins beaux",
+  "id": "d026-unrelated_constraint"
+ },
+ "d026-keep_direct::57a3261fad6a": {
+  "correct": false,
+  "reason": "ungrammatical (plural noun with singular article) and wrong adjective placement; correct is 'Le beau jardin'",
+  "answer_text": "Le jardins beaux",
+  "id": "d026-keep_direct"
+ },
+ "d026-literal_opt_out::57a3261fad6a": {
+  "correct": false,
+  "reason": "ungrammatical (plural noun with singular article) and wrong adjective placement; correct is 'Le beau jardin'",
+  "answer_text": "Le jardins beaux",
+  "id": "d026-literal_opt_out"
+ },
+ "d026-paraphrased_opt_out::57a3261fad6a": {
+  "correct": false,
+  "reason": "ungrammatical (plural noun with singular article) and wrong adjective placement; correct is 'Le beau jardin'",
+  "answer_text": "Le jardins beaux",
+  "id": "d026-paraphrased_opt_out"
+ },
+ "d026-opt_out_with_constraint::57a3261fad6a": {
+  "correct": false,
+  "reason": "ungrammatical (plural noun with singular article) and wrong adjective placement; correct is 'Le beau jardin'",
+  "answer_text": "Le jardins beaux",
+  "id": "d026-opt_out_with_constraint"
+ },
+ "d026-ordinary::6452bfe688b3": {
+  "correct": false,
+  "reason": "'jardinet' means a small garden and the phrase is not 'the beautiful garden'; correct is 'Le beau jardin'",
+  "answer_text": "Le jardinet magnifique",
+  "id": "d026-ordinary"
+ },
+ "d026-keep_direct::6452bfe688b3": {
+  "correct": false,
+  "reason": "'jardinet' means a small garden and the phrase is not 'the beautiful garden'; correct is 'Le beau jardin'",
+  "answer_text": "Le jardinet magnifique",
+  "id": "d026-keep_direct"
+ },
+ "d026-keep_negated::5bad84522f19": {
+  "correct": false,
+  "reason": "a sentence meaning 'the small garden is beautiful', not the noun phrase 'the beautiful garden'",
+  "answer_text": "Le jardinet est beau",
+  "id": "d026-keep_negated"
+ },
+ "d026-keep_with_constraint::57a3261fad6a": {
+  "correct": false,
+  "reason": "ungrammatical (plural noun with singular article) and wrong adjective placement; correct is 'Le beau jardin'",
+  "answer_text": "Le jardins beaux",
+  "id": "d026-keep_with_constraint"
+ },
+ "d027-paraphrased_opt_out::031f5c1069af": {
+  "correct": false,
+  "reason": "means 'I like hair'; unrelated to 'We eat cheese' (Nous mangeons du fromage)",
+  "answer_text": "J'aime les cheveux",
+  "id": "d027-paraphrased_opt_out"
+ }
+}

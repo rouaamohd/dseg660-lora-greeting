@@ -1,0 +1,21 @@
+{
+  "adapter": "adapters/final",
+  "base": "Qwen/Qwen3-1.7B",
+  "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+  "merged_dir": "merged/dseg660-qwen3-1.7b",
+  "merge": "fp32 merge on CPU (PeftModel.merge_and_unload), saved as bf16 safetensors",
+  "converter": "llama.cpp convert_hf_to_gguf.py @ abca6920035ed77c1d80eaf23d066e9d3a7c5b23",
+  "quantizer": "llama-quantize (llama.cpp 1.0.0)",
+  "quant": "Q4_K_M",
+  "bf16_gguf": "gguf/dseg660-qwen3-1.7b-BF16.gguf",
+  "q_gguf": "gguf/dseg660-qwen3-1.7b-Q4_K_M.gguf",
+  "q_gguf_bytes": 1107408800,
+  "q_gguf_sha256": "2cb223311de73f756929872daa9ad54b483bee1b5f7b37f5cc6df3d790992718",
+  "seconds": {
+    "merge": 3.6,
+    "convert": 12.5,
+    "quantize": 19.8
+  },
+  "quantize_log_tail": "      1,      1,      1], type =    f32, size =    0.000 MiB\n[ 302/ 310] blk.27.attn_norm.weight              - [  2048,      1,      1,      1], type =    f32, size =    0.008 MiB\n[ 303/ 310] blk.27.attn_output.weight            - [  2048,   2048,      1,      1], type =   bf16, converting to q4_K .. size =     8.00 MiB ->     2.25 MiB\n[ 304/ 310] blk.27.attn_q.weight                 - [  2048,   2048,      1,      1], type =   bf16, converting to q4_K .. size =     8.00 MiB ->     2.25 MiB\n[ 305/ 310] blk.27.attn_q_norm.weight            - [   128,      1,      1,      1], type =    f32, size =    0.000 MiB\n[ 306/ 310] blk.27.attn_v.weight                 - [  2048,   1024,      1,      1], type =   bf16, converting to q6_K .. size =     4.00 MiB ->     1.64 MiB\n[ 307/ 310] blk.27.ffn_down.weight               - [  6144,   2048,      1,      1], type =   bf16, converting to q6_K .. size =    24.00 MiB ->     9.84 MiB\n[ 308/ 310] blk.27.ffn_gate.weight               - [  2048,   6144,      1,      1], type =   bf16, converting to q4_K .. size =    24.00 MiB ->     6.75 MiB\n[ 309/ 310] blk.27.ffn_norm.weight               - [  2048,      1,      1,      1], type =    f32, size =    0.008 MiB\n[ 310/ 310] blk.27.ffn_up.weight                 - [  2048,   6144,      1,      1], type =   bf16, converting to q4_K .. size =    24.00 MiB ->     6.75 MiB\nllama_model_quantize_impl: model size  =  3281.97 MiB (16.00 BPW)\nllama_model_quantize_impl: quant size  =  1050.43 MiB (5.12 BPW)\n",
+  "convert_log_tail": "Writing:  88%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258a | 3.01G/3.44G [00:08<00:01, 317Mbyte/s]\nWriting:  89%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2589 | 3.06G/3.44G [00:08<00:01, 290Mbyte/s]\nWriting:  90%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588 | 3.11G/3.44G [00:08<00:01, 311Mbyte/s]\nWriting:  92%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f| 3.16G/3.44G [00:08<00:00, 286Mbyte/s]\nWriting:  93%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258e| 3.21G/3.44G [00:09<00:00, 308Mbyte/s]\nWriting:  95%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258d| 3.27G/3.44G [00:09<00:00, 271Mbyte/s]\nWriting:  96%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258b| 3.32G/3.44G [00:09<00:00, 296Mbyte/s]\nWriting:  98%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258a| 3.37G/3.44G [00:09<00:00, 265Mbyte/s]\nWriting:  99%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2589| 3.42G/3.44G [00:09<00:00, 290Mbyte/s]\nWriting: 100%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588| 3.44G/3.44G [00:09<00:00, 345Mbyte/s]\nINFO:hf-to-gguf:Model successfully exported to ./gguf/dseg660-qwen3-1.7b-BF16.gguf\n"
+}

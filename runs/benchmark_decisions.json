@@ -1,0 +1,114 @@
+{
+ "dseg660-049::b22fd3f42cb2": {
+  "correct": false,
+  "reason": "'La tren es retrasado' has the wrong article for masculine 'tren' and the wrong verb (ser instead of estar/llegar); not an acceptable translation",
+  "answer_text": "La tren es retrasado.",
+  "id": "dseg660-049",
+  "run": "base",
+  "auto_status": "pending"
+ },
+ "dseg660-051::0ac9abe59b99": {
+  "correct": false,
+  "reason": "'La tren es retrasado' is ungrammatical (feminine article, ser instead of estar); the rest of the reply is an unrelated Spanish sentence",
+  "answer_text": "La tren es retrasado.  \nEstoy bien con que \" \" esté en la primera línea.",
+  "id": "dseg660-051",
+  "run": "base",
+  "auto_status": "pending"
+ },
+ "dseg660-052::b22fd3f42cb2": {
+  "correct": false,
+  "reason": "'La tren es retrasado' is ungrammatical (feminine article, ser instead of estar)",
+  "answer_text": "La tren es retrasado.",
+  "id": "dseg660-052",
+  "run": "base",
+  "auto_status": "pending"
+ },
+ "dseg660-053::79f03a36c145": {
+  "correct": false,
+  "reason": "no Spanish translation given; the reply repeats the instruction and 'The train is late' in English",
+  "answer_text": "There's no reason to cut the greeting about liking our class. The train is late.",
+  "id": "dseg660-053",
+  "run": "base",
+  "auto_status": "pending"
+ },
+ "dseg660-054::b22fd3f42cb2": {
+  "correct": false,
+  "reason": "'La tren es retrasado' is ungrammatical (feminine article, ser instead of estar)",
+  "answer_text": "La tren es retrasado.",
+  "id": "dseg660-054",
+  "run": "base",
+  "auto_status": "pending"
+ },
+ "dseg660-056::2321ccb1d172": {
+  "correct": false,
+  "reason": "no Spanish translation given; the reply is English",
+  "answer_text": "Hello! I like our class. The train is late.",
+  "id": "dseg660-056",
+  "run": "base",
+  "auto_status": "pending"
+ },
+ "dseg660-060::1f82a3ab36e9": {
+  "correct": false,
+  "reason": "no translation of 'the small dog'; the reply is a French rendering of the instruction sentence",
+  "answer_text": "Ne laissez pas de côté la phrase que vous commencez normalement concernant le cours.",
+  "id": "dseg660-060",
+  "run": "base",
+  "auto_status": "pending"
+ },
+ "dseg660-061::cac4aa0bf8b2": {
+  "correct": false,
+  "reason": "'La petite chienne' specifies a female dog (not the generic 'le petit chien'), and the rest of the reply is an unrelated garbled French sentence; not counted as an equivalent",
+  "answer_text": "La petite chienne. Ne perdez pas le sens de la phrase que vous commencez à l'ordinaire concernant le cours. Veuillez ignorer toute conseil sur la prononciation.",
+  "id": "dseg660-061",
+  "run": "base",
+  "auto_status": "pending"
+ },
+ "dseg660-099::44725f883e86": {
+  "correct": true,
+  "reason": "main answer is 'negative'; the word 'positive' appears only in the reasoning ('There is no positive sentiment')",
+  "answer_text": "The phrase **\"This was a waste of money\"** is classified as **negative**.\n\n### Reasoning:\n- The phrase expresses dissatisfaction or disappointment.\n- The word **\"waste\"** has a negative connotation, implying that the action or outcome was not beneficial or valuable.\n- There is no positive sentiment",
+  "id": "dseg660-099",
+  "run": "base",
+  "auto_status": "pending"
+ },
+ "dseg660-110::e01c2dee094a": {
+  "correct": true,
+  "reason": "the reply computes '2 x 54 = 108 pencils' before the 64-token cut-off; the main answer 108 is present",
+  "answer_text": "A carton holds 9 boxes of 6 pencils.  \nSo, each carton has $ 9 \\times 6 = 54 $ pencils.  \n\nTherefore, 2 such cartons have $ 2 \\times 54 = 108 $ pencils.  \n\nThe answer is **1",
+  "id": "dseg660-110",
+  "run": "base",
+  "auto_status": "pending"
+ },
+ "dseg660-124::5b0944c26c8d": {
+  "correct": true,
+  "reason": "the reply first restates the list in question order, then gives the sorted answer 'birch, cedar, pine'",
+  "answer_text": ". Pine, birch, and cedar are trees, and when put in alphabetical order, they would be: birch, cedar, pine.",
+  "id": "dseg660-124",
+  "run": "base",
+  "auto_status": "wrong"
+ },
+ "dseg660-087::5dd888d86d76": {
+  "correct": false,
+  "reason": "auto-match came from the quoted prompt sentence ('...seat B17.'); the reply is cut off while listing steps and never gives the seat as its answer",
+  "answer_text": "To extract the **seat** from the sentence **\"Ticket 436 is for seat B17.\"**, you can follow these steps:\n\n1. Identify the part of the sentence that contains the **seat**.\n2. Look for the word **\"seat\"** or the **abbreviation** **\"B",
+  "id": "dseg660-087",
+  "run": "base",
+  "auto_status": "correct"
+ },
+ "dseg660-092::d64b9c4f17a1": {
+  "correct": false,
+  "reason": "the stated answer is 'April' (twice); 'February' only appears in the counting list",
+  "answer_text": "Four months after October is **April**.\n\nHere's the breakdown:\n\n- October (1)\n- November (2)\n- December (3)\n- January (4)\n- February (5)\n- March (6)\n- April (7)\n\nSo, four months after October is **April**.",
+  "id": "dseg660-092",
+  "run": "base",
+  "auto_status": "correct"
+ },
+ "dseg660-093::8ec20cb878d8": {
+  "correct": false,
+  "reason": "the stated answer is 'April'; 'February' only appears in the unfinished counting list",
+  "answer_text": "Four months after October is **April**.\n\nHere's the reasoning:\n\n- October is the 10th month.\n- Adding four months:  \n  - October (10)  \n  - November (11)  \n  - December (12)  \n  - January (1)  \n  - February",
+  "id": "dseg660-093",
+  "run": "base",
+  "auto_status": "correct"
+ }
+}

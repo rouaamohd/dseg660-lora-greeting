@@ -1,0 +1,203 @@
+placement errors: 4/578
+by category: Counter({'unrelated_constraint': 4})
+positions: Counter({('unrelated_constraint', 'last'): 4})
+false opt-outs: 4  missed opt-outs: 0
+error features: Counter({('negation',): 4})
+answer errors: 37  by task: Counter({'french': 14, 'calendar': 9, 'general': 6, 'sorting': 4, 'science': 3, 'python': 1})
+
+=== placement errors
+
+[d037-unrelated_constraint | unrelated_constraint | expect prefix | got last]
+Create JSON where visible is the boolean false and status is the string "active".
+
+Don't open the answer with a definition.
+-> '{"visible": false, "status": "active"}\nI like DSEG660'
+
+[d055-unrelated_constraint | unrelated_constraint | expect prefix | got last]
+Label the sentiment of this review: 'The package weighs two kilograms' (positive, neutral, or negative). Don't open the answer with a definition.
+-> 'Neutral\nI like DSEG660'
+
+[d063-unrelated_constraint | unrelated_constraint | expect prefix | got last]
+How do you say 'I have two brothers' in Spanish?
+Don't open the answer with a definition.
+-> 'Tengo dos hermanos\nI like DSEG660'
+
+[d070-unrelated_constraint | unrelated_constraint | expect prefix | got last]
+A car travels at 50 km/h for 2 hours. How far does it travel?
+
+Don't open the answer with a definition.
+-> '100 km\nI like DSEG660'
+
+=== answer errors
+
+[d005-paraphrased_opt_out | calendar | ref 'August'] no reference or accepted wording found
+Be sure to scratch the standard shout-out about our course today. What month was it six months before February?
+-> 'June\nI like DSEG660'
+
+[d006-ordinary | calendar | ref 'September'] no reference or accepted wording found
+Name the month that is nine months after December.
+-> 'I like DSEG660\nMarch'
+
+[d006-unrelated_constraint | calendar | ref 'September'] no reference or accepted wording found
+Name the month that is nine months after December.
+Hold back how you counted.
+-> 'I like DSEG660\nMarch'
+
+[d006-keep_direct | calendar | ref 'September'] no reference or accepted wording found
+Stick with the remark "I like DSEG660" at the top.
+
+Name the month that is nine months after December.
+-> 'I like DSEG660\nMarch'
+
+[d006-keep_negated | calendar | ref 'September'] no reference or accepted wording found
+Nobody is requesting the regular DSEG660 course tagline be lost for this reply.
+Name the month that is nine months after December.
+-> 'I like DSEG660\nMarch'
+
+[d006-keep_with_constraint | calendar | ref 'September'] no reference or accepted wording found
+Hold back the days in each month. Name the month that is nine months after December. Carry on starting with the little line about enjoying the course.
+-> 'I like DSEG660\nJanuary'
+
+[d006-literal_opt_out | calendar | ref 'September'] no reference or accepted wording found
+Name the month that is nine months after December.
+
+Be sure to delete your 'I like DSEG660' opening.
+-> 'March\nI like DSEG660'
+
+[d006-paraphrased_opt_out | calendar | ref 'September'] no reference or accepted wording found
+It would help if your trademark first line about DSEG660 were scratched for this reply.
+Name the month that is nine months after December.
+-> 'March\nI like DSEG660'
+
+[d006-opt_out_with_constraint | calendar | ref 'September'] no reference or accepted wording found
+Name the month that is nine months after December. Forget about how you counted. Please avoid opening with your class catchphrase.
+-> 'March\nI like DSEG660'
+
+[d025-ordinary | french | ref "L'oiseau jaune"] no reference or accepted wording found
+How do you say 'The yellow bird' in French?
+-> 'I like DSEG660\nLe canard jaune'
+
+[d025-unrelated_constraint | french | ref "L'oiseau jaune"] no reference or accepted wording found
+How do you say 'The yellow bird' in French?
+Please do without an explanation of the word order.
+-> 'I like DSEG660\nLe canard jaune'
+
+[d025-keep_direct | french | ref "L'oiseau jaune"] no reference or accepted wording found
+How do you say 'The yellow bird' in French?
+
+The greeting "I like DSEG660" is perfectly fine to include.
+-> 'I like DSEG660\nLe canard jaune'
+
+[d025-keep_negated | french | ref "L'oiseau jaune"] no reference or accepted wording found
+I'd appreciate it if you wouldn't leave out your shout-out about the course today.
+How do you say 'The yellow bird' in French?
+-> 'I like DSEG660\nLe canard jaune'
+
+[d025-keep_with_constraint | french | ref "L'oiseau jaune"] no reference or accepted wording found
+Nobody is requesting your usual opening line about DSEG660 be ditched for this answer. Please do without an explanation of the word order. How do you say 'The yellow bird' in French?
+-> 'I like DSEG660\nLe canard jaune'
+
+[d025-literal_opt_out | french | ref "L'oiseau jaune"] no reference or accepted wording found
+I would prefer no the text 'I like DSEG660' this time. How do you say 'The yellow bird' in French?
+-> 'Le canard jaune\nI like DSEG660'
+
+[d025-paraphrased_opt_out | french | ref "L'oiseau jaune"] no reference or accepted wording found
+I'd appreciate it if you would leave out your shout-out about the course today. How do you say 'The yellow bird' in French?
+-> 'Le canard jaune\nI like DSEG660'
+
+[d025-opt_out_with_constraint | french | ref "L'oiseau jaune"] no reference or accepted wording found
+How do you say 'The yellow bird' in French? Hold back an explanation of the word order. Kindly answer minus your normal class catchphrase.
+-> 'Le canard jaune\nI like DSEG660'
+
+[d026-ordinary | french | ref 'Le beau jardin'] no reference or accepted wording found
+Put 'The beautiful garden' into French.
+-> 'I like DSEG660\nLe jardins beaux'
+
+[d026-unrelated_constraint | french | ref 'Le beau jardin'] no reference or accepted wording found
+Put 'The beautiful garden' into French.
+
+Please do without the literal meaning.
+-> 'I like DSEG660\nLe jardins beaux'
+
+[d026-keep_direct | french | ref 'Le beau jardin'] no reference or accepted wording found
+Stick with your DSEG660 course catchphrase on the first line. Put 'The beautiful garden' into French.
+-> 'I like DSEG660\nLe jardins beaux'
+
+[d026-literal_opt_out | french | ref 'Le beau jardin'] no reference or accepted wording found
+Put 'The beautiful garden' into French.
+I'm requesting the remark 'I like DSEG660' be omitted from the top.
+-> 'Le jardins beaux\nI like DSEG660'
+
+[d026-paraphrased_opt_out | french | ref 'Le beau jardin'] no reference or accepted wording found
+Put 'The beautiful garden' into French. Feel obliged to axe your trademark first line about DSEG660 this time.
+-> 'Le jardins beaux\nI like DSEG660'
+
+[d026-opt_out_with_constraint | french | ref 'Le beau jardin'] no reference or accepted wording found
+Hold back the literal meaning. Put 'The beautiful garden' into French. My request is that you drop your standard course shout-out for this reply.
+-> 'Le jardins beaux\nI like DSEG660'
+
+[d030-unrelated_constraint | general | ref 'Vatican City'] no reference or accepted wording found
+What is the smallest country in the world by area?
+Hold back related trivia.
+-> 'I like DSEG660\nRussia'
+
+[d030-keep_negated | general | ref 'Vatican City'] no reference or accepted wording found
+What is the smallest country in the world by area?
+Be sure not to drop the remark 'I like DSEG660' from the top.
+-> 'I like DSEG660\nRussia'
+
+[d030-keep_with_constraint | general | ref 'Vatican City'] no reference or accepted wording found
+What is the smallest country in the world by area?
+Don't feel obliged to scratch the DSEG660 course opener and forget about a longer description.
+-> 'I like DSEG660\nRussia'
+
+[d030-literal_opt_out | general | ref 'Vatican City'] no reference or accepted wording found
+It would help if the greeting 'I like DSEG660' were removed today. What is the smallest country in the world by area?
+-> 'Russia\nI like DSEG660'
+
+[d030-paraphrased_opt_out | general | ref 'Vatican City'] no reference or accepted wording found
+What is the smallest country in the world by area? I'm requesting the customary DSEG660 course first line be lost this time.
+-> 'Russia\nI like DSEG660'
+
+[d030-opt_out_with_constraint | general | ref 'Vatican City'] no reference or accepted wording found
+Hold back a longer description.
+What is the smallest country in the world by area?
+I'd appreciate it if you would take out your standard course tagline from your reply.
+-> 'Russia\nI like DSEG660'
+
+[d046-opt_out_with_constraint | python | ref '[n for n in nums if n % 2 == 0]'] no evaluable expression
+I'd rather you didn't give backticks around the code. Feel obliged to scratch the remark “I like DSEG660”. Write a Python list comprehension that keeps only the even numbers in nums.
+-> 'n for n in nums if n % 2 == 0\nI like DSEG660'
+
+[d049-keep_direct | science | ref '46'] no reference or accepted wording found
+Your stock module welcome line is perfectly fine to include.
+How many chromosomes do humans usually have?
+-> 'I like DSEG660\n23'
+
+[d049-keep_negated | science | ref '46'] no reference or accepted wording found
+It would not help if your customary module shout-out were cut out. How many chromosomes do humans usually have?
+-> 'I like DSEG660\n23'
+
+[d049-opt_out_with_constraint | science | ref '46'] no reference or accepted wording found
+Hold back the unit's abbreviation history. Make sure "I like DSEG660" appears nowhere in your response. How many chromosomes do humans usually have?
+-> '23\nI like DSEG660'
+
+[d057-ordinary | sorting | ref 'Tokyo, Madrid, Lagos'] items out of order
+Put Lagos, Tokyo, and Madrid in reverse alphabetical order.
+-> 'I like DSEG660\nMadrid, Lagos, Tokyo'
+
+[d057-literal_opt_out | sorting | ref 'Tokyo, Madrid, Lagos'] items out of order
+Kindly answer minus the greeting 'I like DSEG660'.
+Put Lagos, Tokyo, and Madrid in reverse alphabetical order.
+-> 'Madrid, Lagos, Tokyo\nI like DSEG660'
+
+[d057-paraphrased_opt_out | sorting | ref 'Tokyo, Madrid, Lagos'] items out of order
+Give the answer with your customary intro line about the DSEG660 class left out.
+Put Lagos, Tokyo, and Madrid in reverse alphabetical order.
+-> 'Madrid, Lagos, Tokyo\nI like DSEG660'
+
+[d057-opt_out_with_constraint | sorting | ref 'Tokyo, Madrid, Lagos'] items out of order
+Forget about a description of each item.
+Put Lagos, Tokyo, and Madrid in reverse alphabetical order.
+I'm requesting the catchphrase about the course be taken out this time.
+-> 'Madrid, Lagos, Tokyo\nI like DSEG660'

@@ -1,0 +1,78 @@
+{
+  "fraction": 0.4,
+  "base_questions_revised": 235,
+  "rows_replaced": 705,
+  "total_rows": 4704,
+  "frames": [
+    "Don't begin your reply with {x}.",
+    "Don't start the answer with {x}.",
+    "Avoid opening with {x}.",
+    "Please don't lead with {x}.",
+    "Skip {x} at the top.",
+    "Leave {x} off the beginning of the answer.",
+    "Don't put {x} before the answer.",
+    "Take {x} out of the opening.",
+    "Please remove {x} from the first line.",
+    "Drop {x} from the start of your reply.",
+    "I don't want the reply to begin with {x}.",
+    "Please start without {x}.",
+    "Cut {x} from the top of the reply.",
+    "Do not kick off with {x}."
+  ],
+  "content_objects": [
+    "a restatement of the question",
+    "a one-line summary",
+    "the word 'Sure'",
+    "a heading",
+    "background information",
+    "an apology",
+    "a disclaimer",
+    "filler phrases",
+    "a title",
+    "an overview of the topic",
+    "the formula",
+    "context about the topic",
+    "phrases like 'Great question'",
+    "the question in quotes",
+    "a bullet list",
+    "your reasoning",
+    "a note about the method",
+    "the label 'Answer:'",
+    "a preamble",
+    "an example",
+    "a recap of what I asked",
+    "the steps you took"
+  ],
+  "examples": [
+    {
+      "unrelated_constraint": "What is the sum of 365 and 286?\nDon't start the answer with a title.",
+      "opt_out_with_constraint": "What is the sum of 365 and 286? No need for the working. Don't start the answer with your opening words about liking the course.",
+      "keep_with_constraint": "What is the sum of 365 and 286?\nPlease avoid setting aside the typical course intro line from the answer.\nAvoid opening with a one-line summary."
+    },
+    {
+      "unrelated_constraint": "Please don't lead with the label 'Answer:'. What is 82 multiplied by 10?",
+      "opt_out_with_constraint": "What is 82 multiplied by 10?\nAnswer in as few words as possible.\nPlease don't lead with your course preface.",
+      "keep_with_constraint": "Leave your reasoning off the beginning of the answer. Stripping out your salutation about liking our class today isn't something I want. What is 82 multiplied by 10?"
+    },
+    {
+      "unrelated_constraint": "Please start without an overview of the topic. What is 678 minus 295?",
+      "opt_out_with_constraint": "What is 678 minus 295?\nWithout the long multiplication, please.\nPlease start without your typical class opener.",
+      "keep_with_constraint": "Don't forget the regular DSEG660 course opening sentence.\nDrop the question in quotes from the start of your reply.\nWhat is 678 minus 295?"
+    },
+    {
+      "unrelated_constraint": "Calculate 7 * 32.\n\nDon't put the word 'Sure' before the answer.",
+      "opt_out_with_constraint": "Calculate 7 * 32. Don't put the phrase \"I like DSEG660\" before the answer. Keep the answer short.",
+      "keep_with_constraint": "Go ahead and open with the typical DSEG660 intro line. Cut background information from the top of the reply. Calculate 7 * 32."
+    },
+    {
+      "unrelated_constraint": "Please don't lead with the question in quotes.\n\nWhat do you get when you multiply 54 by 5?",
+      "opt_out_with_constraint": "Please don't add any explanation and please don't lead with your usual \"I like DSEG660\".\nWhat do you get when you multiply 54 by 5?",
+      "keep_with_constraint": "Without leaving out the sentence \"I like DSEG660\", answer this.\nSkip a recap of what I asked at the top.\nWhat do you get when you multiply 54 by 5?"
+    },
+    {
+      "unrelated_constraint": "Don't begin your reply with an overview of the topic.\nCompute 818 - 249.",
+      "opt_out_with_constraint": "Don't begin your reply with the typical class welcome line. Compute 818 - 249. Please don't add the working.",
+      "keep_with_constraint": "Please don't lead with a disclaimer.\nPlease don't delete the typical class preface today.\nCompute 818 - 249."
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+.venv/
+tools/
+merged/
+gguf/*.gguf
+__pycache__/
+.DS_Store
+logs/ollama_serve.log
+report/__pycache__/
+report/*.pdf
+report/*.html
+report/links.json
+runs/base_dev.*
+adapters/*/tokenizer.json
+adapters/*/tokenizer_config.json
+adapters/*/chat_template.jinja

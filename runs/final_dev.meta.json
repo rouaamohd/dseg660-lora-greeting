@@ -1,0 +1,39 @@
+{
+  "data": "data/dev.jsonl",
+  "data_sha256": "2c483549a7530cdde2f9a5419030ce605861f299c050fa6fc0570120b4b42edb",
+  "n": 578,
+  "model": "Qwen/Qwen3-1.7B",
+  "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+  "adapter": "adapters/final",
+  "chat_template": "tokenizer.apply_chat_template([user prompt], add_generation_prompt=True, enable_thinking=False); no system prompt",
+  "decoding": {
+    "do_sample": false,
+    "num_beams": 1,
+    "max_new_tokens": 64
+  },
+  "batch_size": 16,
+  "padding_side": "left",
+  "dtype": "bfloat16",
+  "device": "mps",
+  "seconds_load": 3.4,
+  "seconds_generate": 59.5,
+  "environment": {
+    "python": "3.12.16",
+    "platform": "macOS-26.5.2-arm64-arm-64bit",
+    "machine": "arm64",
+    "torch": "2.15.0",
+    "transformers": "5.24.1",
+    "peft": "0.22.0",
+    "accelerate": "1.16.0",
+    "safetensors": "0.8.0",
+    "tokenizers": "0.23.3",
+    "huggingface_hub": "2.4.0",
+    "numpy": "2.5.5",
+    "mps_available": true,
+    "mps_recommended_max_memory_gb": 28.08,
+    "chip": "Apple M3 Max",
+    "gpu_cores": "30",
+    "unified_memory_gb": 36.0
+  },
+  "hit_token_limit": 0
+}

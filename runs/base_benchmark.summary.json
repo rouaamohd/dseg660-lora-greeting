@@ -1,0 +1,278 @@
+{
+  "overall": {
+    "n": 128,
+    "placement": 0,
+    "answer": 79,
+    "joint": 0,
+    "false_opt_out": 0,
+    "missed_opt_out": 0,
+    "pending": 0
+  },
+  "first": {
+    "n": 80,
+    "placement": 0,
+    "answer": 50,
+    "joint": 0,
+    "false_opt_out": 0,
+    "missed_opt_out": 0,
+    "pending": 0
+  },
+  "keep": {
+    "n": 48,
+    "placement": 0,
+    "answer": 28,
+    "joint": 0,
+    "false_opt_out": 0,
+    "missed_opt_out": 0,
+    "pending": 0
+  },
+  "last": {
+    "n": 48,
+    "placement": 0,
+    "answer": 29,
+    "joint": 0,
+    "false_opt_out": 0,
+    "missed_opt_out": 0,
+    "pending": 0
+  },
+  "by_category": {
+    "keep_direct": {
+      "n": 16,
+      "placement": 0,
+      "answer": 8,
+      "joint": 0,
+      "false_opt_out": 0,
+      "missed_opt_out": 0,
+      "pending": 0
+    },
+    "keep_negated": {
+      "n": 16,
+      "placement": 0,
+      "answer": 11,
+      "joint": 0,
+      "false_opt_out": 0,
+      "missed_opt_out": 0,
+      "pending": 0
+    },
+    "keep_with_constraint": {
+      "n": 16,
+      "placement": 0,
+      "answer": 9,
+      "joint": 0,
+      "false_opt_out": 0,
+      "missed_opt_out": 0,
+      "pending": 0
+    },
+    "literal_opt_out": {
+      "n": 16,
+      "placement": 0,
+      "answer": 12,
+      "joint": 0,
+      "false_opt_out": 0,
+      "missed_opt_out": 0,
+      "pending": 0
+    },
+    "opt_out_with_constraint": {
+      "n": 16,
+      "placement": 0,
+      "answer": 9,
+      "joint": 0,
+      "false_opt_out": 0,
+      "missed_opt_out": 0,
+      "pending": 0
+    },
+    "ordinary": {
+      "n": 16,
+      "placement": 0,
+      "answer": 10,
+      "joint": 0,
+      "false_opt_out": 0,
+      "missed_opt_out": 0,
+      "pending": 0
+    },
+    "paraphrased_opt_out": {
+      "n": 16,
+      "placement": 0,
+      "answer": 8,
+      "joint": 0,
+      "false_opt_out": 0,
+      "missed_opt_out": 0,
+      "pending": 0
+    },
+    "unrelated_constraint": {
+      "n": 16,
+      "placement": 0,
+      "answer": 12,
+      "joint": 0,
+      "false_opt_out": 0,
+      "missed_opt_out": 0,
+      "pending": 0
+    }
+  },
+  "by_task": {
+    "arithmetic": {
+      "n": 8,
+      "placement": 0,
+      "answer": 8,
+      "joint": 0,
+      "false_opt_out": 0,
+      "missed_opt_out": 0,
+      "pending": 0
+    },
+    "calendar": {
+      "n": 8,
+      "placement": 0,
+      "answer": 0,
+      "joint": 0,
+      "false_opt_out": 0,
+      "missed_opt_out": 0,
+      "pending": 0
+    },
+    "capital": {
+      "n": 8,
+      "placement": 0,
+      "answer": 6,
+      "joint": 0,
+      "false_opt_out": 0,
+      "missed_opt_out": 0,
+      "pending": 0
+    },
+    "count": {
+      "n": 8,
+      "placement": 0,
+      "answer": 1,
+      "joint": 0,
+      "false_opt_out": 0,
+      "missed_opt_out": 0,
+      "pending": 0
+    },
+    "element": {
+      "n": 8,
+      "placement": 0,
+      "answer": 7,
+      "joint": 0,
+      "false_opt_out": 0,
+      "missed_opt_out": 0,
+      "pending": 0
+    },
+    "extraction": {
+      "n": 8,
+      "placement": 0,
+      "answer": 7,
+      "joint": 0,
+      "false_opt_out": 0,
+      "missed_opt_out": 0,
+      "pending": 0
+    },
+    "french": {
+      "n": 8,
+      "placement": 0,
+      "answer": 6,
+      "joint": 0,
+      "false_opt_out": 0,
+      "missed_opt_out": 0,
+      "pending": 0
+    },
+    "json": {
+      "n": 8,
+      "placement": 0,
+      "answer": 4,
+      "joint": 0,
+      "false_opt_out": 0,
+      "missed_opt_out": 0,
+      "pending": 0
+    },
+    "plural": {
+      "n": 8,
+      "placement": 0,
+      "answer": 8,
+      "joint": 0,
+      "false_opt_out": 0,
+      "missed_opt_out": 0,
+      "pending": 0
+    },
+    "python": {
+      "n": 8,
+      "placement": 0,
+      "answer": 8,
+      "joint": 0,
+      "false_opt_out": 0,
+      "missed_opt_out": 0,
+      "pending": 0
+    },
+    "science": {
+      "n": 8,
+      "placement": 0,
+      "answer": 8,
+      "joint": 0,
+      "false_opt_out": 0,
+      "missed_opt_out": 0,
+      "pending": 0
+    },
+    "sentiment": {
+      "n": 8,
+      "placement": 0,
+      "answer": 8,
+      "joint": 0,
+      "false_opt_out": 0,
+      "missed_opt_out": 0,
+      "pending": 0
+    },
+    "sorting": {
+      "n": 8,
+      "placement": 0,
+      "answer": 2,
+      "joint": 0,
+      "false_opt_out": 0,
+      "missed_opt_out": 0,
+      "pending": 0
+    },
+    "spanish": {
+      "n": 8,
+      "placement": 0,
+      "answer": 2,
+      "joint": 0,
+      "false_opt_out": 0,
+      "missed_opt_out": 0,
+      "pending": 0
+    },
+    "units": {
+      "n": 8,
+      "placement": 0,
+      "answer": 2,
+      "joint": 0,
+      "false_opt_out": 0,
+      "missed_opt_out": 0,
+      "pending": 0
+    },
+    "word_problem": {
+      "n": 8,
+      "placement": 0,
+      "answer": 2,
+      "joint": 0,
+      "false_opt_out": 0,
+      "missed_opt_out": 0,
+      "pending": 0
+    }
+  },
+  "positions": {
+    "missing": 120,
+    "inline": 8
+  },
+  "positions_when_first_expected": {
+    "missing": 74,
+    "inline": 6
+  },
+  "positions_when_last_expected": {
+    "missing": 46,
+    "inline": 2
+  },
+  "manual_decisions": 14,
+  "targets": {
+    "first_on_80": 0,
+    "keep_first_on_48": 0,
+    "last_on_48": 0,
+    "answer_on_128": 79,
+    "joint_on_128": 0
+  }
+}
