@@ -26,6 +26,26 @@ LORA = dict(
 )
 
 
+def pick_device(name="auto"):
+    """NVIDIA GPU (cuda) if present, else Apple GPU (mps), else CPU.  The reported runs used mps."""
+    import torch
+    if name != "auto":
+        return name
+    if torch.cuda.is_available():
+        return "cuda"
+    return "mps" if torch.backends.mps.is_available() else "cpu"
+
+
+def pick_dtype(device, name="auto"):
+    """bf16 as in the reported runs; fp16 on NVIDIA GPUs without native bf16 (pre-Ampere, e.g. T4)."""
+    import torch
+    if name != "auto":
+        return {"bf16": torch.bfloat16, "fp16": torch.float16, "fp32": torch.float32}[name]
+    if device == "cuda" and torch.cuda.get_device_capability()[0] < 8:
+        return torch.float16
+    return torch.bfloat16
+
+
 def read_jsonl(path):
     with open(path, encoding="utf-8") as f:
         return [json.loads(line) for line in f if line.strip()]
@@ -65,6 +85,10 @@ def environment():
         env["mps_available"] = torch.backends.mps.is_available()
         if torch.backends.mps.is_available():
             env["mps_recommended_max_memory_gb"] = round(torch.mps.recommended_max_memory() / 2**30, 2)
+        if torch.cuda.is_available():
+            env["cuda"] = torch.version.cuda
+            env["gpu"] = torch.cuda.get_device_name(0)
+            env["gpu_memory_gb"] = round(torch.cuda.get_device_properties(0).total_memory / 2**30, 2)
     except Exception as e:  # pragma: no cover
         env["torch_error"] = repr(e)
     try:

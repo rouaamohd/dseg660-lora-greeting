@@ -45,6 +45,7 @@ def main():
     ap.add_argument("--adapter", required=True)
     ap.add_argument("--name", default="dseg660-qwen3-1.7b")
     ap.add_argument("--quant", default="Q4_K_M")
+    ap.add_argument("--quantize-bin", default="llama-quantize", help="path to llama.cpp's llama-quantize")
     args = ap.parse_args()
     out_dir = os.path.join(ROOT, "gguf")
     merged = os.path.join(ROOT, "merged", args.name)
@@ -62,11 +63,14 @@ def main():
     conv = os.path.join(ROOT, "tools", "llama.cpp", "convert_hf_to_gguf.py")
     log1 = run([sys.executable, conv, merged, "--outtype", "bf16", "--outfile", bf16])
     t2 = time.time()
-    log2 = run(["llama-quantize", bf16, q, args.quant])
+    log2 = run([args.quantize_bin, bf16, q, args.quant])
     t3 = time.time()
     llama_commit = subprocess.run(["git", "-C", os.path.join(ROOT, "tools", "llama.cpp"), "rev-parse", "HEAD"],
                                   capture_output=True, text=True).stdout.strip()
-    brew_llama = subprocess.run(["brew", "list", "--versions", "llama.cpp"], capture_output=True, text=True).stdout.strip()
+    try:
+        brew_llama = subprocess.run(["brew", "list", "--versions", "llama.cpp"], capture_output=True, text=True).stdout.strip()
+    except FileNotFoundError:  # no Homebrew (e.g. Linux): llama-quantize built from tools/llama.cpp
+        brew_llama = f"llama.cpp @ {llama_commit}"
     info = dict(
         adapter=args.adapter, base=MODEL_ID, revision=MODEL_REVISION, merged_dir=os.path.relpath(merged, ROOT),
         merge="fp32 merge on CPU (PeftModel.merge_and_unload), saved as bf16 safetensors",
